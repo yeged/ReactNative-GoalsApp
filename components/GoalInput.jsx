@@ -11,10 +11,12 @@ function GoalInput(props){
       }
 
     return(
+        
         <View style={styles.inputContainer}>
         <TextInput style={styles.input} placeholder="Course Goals" onChangeText={handleChange} value={enteredGoal} />
         <Button onPress={() => props.addGoalHandler(enteredGoal)} title="Add" />
       </View>
+      
     )
     
 }
